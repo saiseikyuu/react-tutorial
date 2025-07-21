@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Shanghai from './Fruit';
 
 // const fruits = ['Apple', 'Banana', 'Cherry'];
 
-function FavoriteFruit(props) {
-  return (
-    <>
-    <p>Shanghai is my favorite {props.red}</p>
-    </>
-  )
+// function FavoriteFruit(props) {
+//   return (
+//     <>
+//     <p>Shanghai is my favorite {props.red}</p>
+//     </>
+//   )
 
-}
+// }
 
 // const listItems = fruits.map((fruit) => 
 //   <li>{fruit}</li>
@@ -18,5 +19,5 @@ function FavoriteFruit(props) {
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<FavoriteFruit red="apple"/>);
+root.render(<Shanghai/>);
 
