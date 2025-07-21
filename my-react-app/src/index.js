@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 
 // const fruits = ['Apple', 'Banana', 'Cherry'];
 
-function FavoriteFruit() {
+function FavoriteFruit(props) {
   return (
     <>
-    <p>Shanghai is my favorite Fruit</p>
+    <p>Shanghai is my favorite {props.red}</p>
     </>
   )
 
@@ -18,5 +18,5 @@ function FavoriteFruit() {
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<FavoriteFruit/>);
+root.render(<FavoriteFruit red="apple"/>);
 
