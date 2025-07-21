@@ -1,23 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Shanghai from './Fruit';
 
-// const fruits = ['Apple', 'Banana', 'Cherry'];
+function Gun() {
+  const shoot = () => {
+    alert('Bang! Bang!');
+  }
 
-// function FavoriteFruit(props) {
-//   return (
-//     <>
-//     <p>Shanghai is my favorite {props.red}</p>
-//     </>
-//   )
+  return (
+    <button onClick={shoot}>Shoot Gun</button>
+  )
+}
 
-// }
 
-// const listItems = fruits.map((fruit) => 
-//   <li>{fruit}</li>
-// )
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Shanghai/>);
+root.render(<Gun/>);
 
