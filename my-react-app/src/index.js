@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Gun() {
-  const shoot = () => {
-    alert('Bang! Bang!');
-  }
+function Form(){
 
-  return (
-    <button onClick={shoot}>Shoot Gun</button>
+  return(
+    <form>
+      <label>name
+      <input type="text" placeholder="Enter your name" />
+      </label>
+    </form>
   )
 }
 
@@ -15,5 +16,5 @@ function Gun() {
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Gun/>);
+root.render(<Form/>);
 
