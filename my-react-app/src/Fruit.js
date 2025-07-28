@@ -11,6 +11,7 @@ function Shanghai() {
         <button onClick={() => setBgClass("Red")} className="bg-white text-red-500 px-4 py-2 rounded">Red</button>
         <button onClick={() => setBgClass("Green")} className="bg-white text-green-500 px-4 py-2 rounded">Green</button>
         <button onClick={() => setBgClass("Pink")} className="bg-white text-green-500 px-4 py-2 rounded">Pink</button>
+        <button onClick={() => setBgClass("Violet")} className="bg-white text-green-500 px-4 py-2 rounded">Violet</button>
       </div>
     </div>
   );
