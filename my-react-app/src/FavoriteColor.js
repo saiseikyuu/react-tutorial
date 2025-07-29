@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Shanghai() {
+function FavoriteColor() {
   const [bgClass, setBgClass] = useState("bg-red-500");
 
   return (
@@ -17,4 +17,4 @@ function Shanghai() {
   );
 }
 
-export default Shanghai;
+export default FavoriteColor;

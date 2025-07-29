@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
-import Shanghai from "./Fruit.js";
+import FavoriteColor from "./FavoriteColor.js";
 
 export default function App() {
   return (
-    <Shanghai/>
+    <FavoriteColor/>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Shanghai />);
+root.render(<FavoriteColor />);
