@@ -5,7 +5,7 @@ function FavoriteColor() {
 
   return (
  <>
- 
+  <h1>My Favorite color is {color}</h1>
  </>
   );
 }
