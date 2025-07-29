@@ -13,7 +13,7 @@ function FavoriteColor() {
  <>
   <h1>My {car.brand}</h1>
   <p>It is a {car.color} {car.model} from {car.year}</p>
-
+  <button onClick={() => setCar({color:"red"})}>Change color</button>
  </>
   );
 }
