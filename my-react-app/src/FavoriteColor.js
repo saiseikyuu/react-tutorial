@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
 function FavoriteColor() {
-  const [color, setColor] = useState("No Favorite Color");
+  const [brand, setBrand] = useState("Ford");
+  const [model, setModel] = useState("Mustang");
+  const [year, setYear] = useState("1996");
+  const [color, setColor] = useState("Red");
 
   return (
  <>
-  <h1>{color}</h1>
-  <button onClick={() => setColor("My Favorite Color is Red")}>Set Color to Red</button>
+  <h1>My {brand}</h1>
+  <p>It is a {color} {model} from {year}</p>
+
  </>
   );
 }
