@@ -1,27 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function FavoriteColor() {
-  const [car, setCar] = useState({
-    brand: "Toyota",
-    model: "Corolla",
-    year: 2020,
-    color: "blue"
-  });
+  const [count, setCount] = useState(0);
+
+
   
-  const updateColor = () => {
-    setCar(prevCar => {
-      return {
-        ...prevCar,
-        color: prevCar.color === "blue" ? "red" : "blue"
-      };
-    })
-  }
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1); 
+    }, 1000)
+  }, [])
 
   return (
  <>
-  <h1>My {car.brand}</h1>
-  <p>It is a {car.color} {car.model} from {car.year}</p>
-  <button onClick={updateColor}>Change color</button>
+       <h1>I've rendered {count} times!</h1>
  </>
   );
 }
