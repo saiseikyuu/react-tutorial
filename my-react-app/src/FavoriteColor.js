@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 
 function FavoriteColor() {
-  const [brand, setBrand] = useState("Ford");
-  const [model, setModel] = useState("Mustang");
-  const [year, setYear] = useState("1996");
-  const [color, setColor] = useState("Red");
+  const [car, setCar] = useState({
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2020,
+    color: "blue"
+  });
+  
 
   return (
  <>
-  <h1>My {brand}</h1>
-  <p>It is a {color} {model} from {year}</p>
+  <h1>My {car.brand}</h1>
+  <p>It is a {car.color} {car.model} from {car.year}</p>
 
  </>
   );
