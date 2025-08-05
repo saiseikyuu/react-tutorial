@@ -6,18 +6,13 @@ const Home = () => {
 
   return (
     <>
-      {data &&
-        data.map((item) => {
-
-            <ol>
-                <li key={item.id}>{item.title}</li>
-             
-            </ol>
-            
-            
-          
-          
-        })}
+      {data && (
+        <ol>
+          {data.map((item) => (
+            <li key={item.id}>{item.title}</li>
+          ))}
+        </ol>
+      )}
     </>
   );
 };
